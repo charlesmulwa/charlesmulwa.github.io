@@ -80,7 +80,7 @@ section .title::after{
 /* navbar styling */
 .navbar{
     position: fixed;
-	background: black;
+	background: #46C1F6;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -213,6 +213,7 @@ section .title::after{
 /* about section styling */
 .about .title::after{
     content: "who i am";
+	color: #46C1F6;
 }
 .about .about-content .left{
     width: 45%;
@@ -257,7 +258,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background: #46C1F6;
 }
 .services .title::before,
 .teams .title::before{
@@ -265,8 +266,9 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
+    background: #46C1F6;
     content: "what i provide";
+	color: #fff;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -304,6 +306,7 @@ section .title::after{
 
 .skills .title::after{
     content: "what i know";
+	color: #46C1F6;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -372,11 +375,13 @@ section .title::after{
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
+	color: #fff;
 }
 .teams .carousel .card{
     background: #222;
+	color: #e1306c;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 10px 20px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -400,8 +405,8 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 5px;
+    width: 5px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
@@ -435,6 +440,7 @@ section .title::after{
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
+	color: #46C1F6;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -508,8 +514,8 @@ section .title::after{
     resize: none;
 }
 .contact .right form .button{
-    height: 47px;
-    width: 170px;
+    height: 100px;
+    width: 300px;
 }
 .contact .right form .button button{
     width: 100%;
@@ -528,10 +534,116 @@ section .title::after{
     color: crimson;
     background: none;
 }
+.icons{
+  display: inline-flex;
+}
+.icons a{
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.icons a .layer{
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+.icons a:hover .layer{
+  transform: rotate(-35deg) skew(20deg);
+}
+.icons a .layer span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.icons a .layer span.fab{
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+.icons a:hover .layer span:nth-child(1){
+  opacity: 0.2;
+}
+.icons a:hover .layer span:nth-child(2){
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.icons a:hover .layer span:nth-child(3){
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4){
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.icons a:hover .layer span:nth-child(5){
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .text{
+  color: orange;
+  border-color: orange;
+  name: Instagram;
+}
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .text{
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+.icons a:nth-child(3) .layer span,
+.icons a:nth-child(3) .text{
+  color: #2867B2;
+  border-color: #2867B2;
+}
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .text{
+  color: green;
+  border-color: green;
+}
+.icons a:nth-child(5) .layer span,
+.icons a:nth-child(5) .text{
+  color: black;
+  border-color: black;
+}
+.icons a:hover:nth-child(1) .layer span{
+  box-shadow: -1px 1px 3px orange;
+}
+.icons a:hover:nth-child(2) .layer span{
+  box-shadow: -1px 1px 3px #1DA1F2;
+}
+.icons a:hover:nth-child(3) .layer span{
+  box-shadow: -1px 1px 3px #2867B2;
+}
+.icons a:hover:nth-child(4) .layer span{
+  box-shadow: -1px 1px 3px green;
+}
+.icons a:hover:nth-child(5) .layer span{
+  box-shadow: -1px 1px 3px black;
+}
+.icons a .text{
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+.icons a:hover .text{
+  bottom: -35px;
+  opacity: 1;
+}
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #46C1F6;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
