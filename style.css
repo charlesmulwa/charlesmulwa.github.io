@@ -590,7 +590,6 @@ section .title::after{
 .icons a:nth-child(1) .text{
   color: orange;
   border-color: orange;
-  name: Instagram;
 }
 .icons a:nth-child(2) .layer span,
 .icons a:nth-child(2) .text{
